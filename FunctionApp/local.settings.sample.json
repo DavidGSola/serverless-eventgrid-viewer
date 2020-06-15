@@ -3,7 +3,7 @@
     "Values": {
         "AzureWebJobsStorage": "UseDevelopmentStorage=true",
         "FUNCTIONS_WORKER_RUNTIME": "dotnet",
-        "AzureSignalRConnectionString": "Endpoint=https://ds-serverless-signalr.service.signalr.net;AccessKey=Hl+RiU7M4uVfsOA91PUoAGSrwTenZkUpI3gf+vuMeyw=;Version=1.0;"
+        "AzureSignalRConnectionString": "<-- SignalR Connection String -->"
     },
     "Host": {
         "CORS": "http://localhost:4200",
