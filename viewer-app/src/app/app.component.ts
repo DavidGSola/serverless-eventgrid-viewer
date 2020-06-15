@@ -9,22 +9,23 @@ import * as SignalR from '@aspnet/signalr';
 export class AppComponent {
 
   title = 'viewer-app';
+  events: string[] = [];
 
   private hubConnection: SignalR.HubConnection;
 
   constructor() {
     // Create connection
     this.hubConnection = new SignalR.HubConnectionBuilder()
-        .withUrl("http://localhost:7071/api")
-        .build();
-    
+      .withUrl("http://localhost:7071/api")
+      .build();
+
     // Start connection. This will call negotiate endpoint
     this.hubConnection
-        .start();
-    
+      .start();
+
     // Handle incoming events for the specific target
     this.hubConnection.on("newEvent", (event) => {
-        console.log(`Event received: ${event}`)
+      this.events.push(event);
     });
   }
 }
