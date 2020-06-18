@@ -2,6 +2,10 @@
 
 A simple real-time EventGrid viewer for CloudEventSchema v1.0. Back-end developed using serverless SignalR with Azure Function. Front-end developed using Angular 9.
 
+Detailed information can be found in thid blog post:
+
+https://dev.to/davidgsola/a-real-time-event-grid-viewer-with-serverless-signalr-35ke
+
 ![Architecture](./resources/architecture.PNG)
 
 ## Getting started
